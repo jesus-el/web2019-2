@@ -15,7 +15,7 @@ import { AutoresFormComponent } from './autores/autores-form/autores-form.compon
 import { EditorialFormComponent } from './editorial/editorial-form/editorial-form.component';
 import { EditorialTableComponent } from './editorial/editorial-table/editorial-table.component';
 import { ExistenciaTableComponent } from './existencia/existencia-table/existencia-table.component';
-import { ExitenciaFormComponent } from './existencia/exitencia-form/exitencia-form.component';
+
 import { ExistenciaFormComponent } from './existencia/existencia-form/existencia-form.component';
 import { LibroTableComponent } from './libro/libro-table/libro-table.component';
 import { LibroFormComponent } from './libro/libro-form/libro-form.component';
@@ -24,7 +24,7 @@ import { TipoFormComponent } from './tipo/tipo-form/tipo-form.component';
 
 
 @NgModule({
-  declarations: [EditorialComponent, AutoresComponent, TipoComponent, AreasComponent, LibroComponent, ExistenciaComponent, AreasFormComponent, AreasTableComponent, AutoresTableComponent, AutoresFormComponent, EditorialFormComponent, EditorialTableComponent, ExistenciaTableComponent, ExitenciaFormComponent, ExistenciaFormComponent, LibroTableComponent, LibroFormComponent, TipoTableComponent, TipoFormComponent],
+  declarations: [EditorialComponent, AutoresComponent, TipoComponent, AreasComponent, LibroComponent, ExistenciaComponent, AreasFormComponent, AreasTableComponent, AutoresTableComponent, AutoresFormComponent, EditorialFormComponent, EditorialTableComponent, ExistenciaTableComponent,  ExistenciaFormComponent, LibroTableComponent, LibroFormComponent, TipoTableComponent, TipoFormComponent],
   imports: [
     CommonModule,
     BibliotecaRoutingModule
