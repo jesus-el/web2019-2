@@ -21,13 +21,16 @@ import { LibroTableComponent } from './libro/libro-table/libro-table.component';
 import { LibroFormComponent } from './libro/libro-form/libro-form.component';
 import { TipoTableComponent } from './tipo/tipo-table/tipo-table.component';
 import { TipoFormComponent } from './tipo/tipo-form/tipo-form.component';
-
+import { FormsModule, ReactiveFormsModule} from "@angular/forms"
 
 @NgModule({
   declarations: [EditorialComponent, AutoresComponent, TipoComponent, AreasComponent, LibroComponent, ExistenciaComponent, AreasFormComponent, AreasTableComponent, AutoresTableComponent, AutoresFormComponent, EditorialFormComponent, EditorialTableComponent, ExistenciaTableComponent,  ExistenciaFormComponent, LibroTableComponent, LibroFormComponent, TipoTableComponent, TipoFormComponent],
   imports: [
     CommonModule,
-    BibliotecaRoutingModule
+    BibliotecaRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+  
   ]
 })
 export class BibliotecaModule { }
