@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./editorial-form.component.scss']
 })
 export class EditorialFormComponent implements OnInit {
-
+  public titulo = "formulario Editorial";
+  public nombre : String;
+  public apellido : String;
+  public fech_nc : String;
+  public nacionalidad : String; 
   constructor() { }
-
+  
   ngOnInit() {
   }
-
+  saveForm() {
+    alert(this.nombre)
+  }
 }

@@ -1,4 +1,5 @@
 <!--<p>editorial-form works!</p>-->
+<h1>{{titulo}}</h1>
 <form>
     <div class="form-group">
       <label for="idedi">Nombre de la Editorial</label>
@@ -22,6 +23,6 @@
       <input type="texto" class="form-control" id="Sitio_Web1" placeholder="Sitio Web">
     </div>
     
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="button" class="btn btn-primary" (click)="saveform()" >Submit</button>
   </form>
   
