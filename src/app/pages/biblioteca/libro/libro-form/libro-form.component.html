@@ -1,25 +1,9 @@
-
-<form>
+{{libroFrom.Value|json()}}
+<form formGroup="libroFrom">
     <div class="form-group">
       <label for="idLibro">ID de Libro</label>
-      <input type="text" class="form-control" id="idLibro" aria-describedby="libroHelp" placeholder="Escriba la identigicacion">
+      <input type="text" class="form-control" formControlName="codigo" name="codigo" placeholder="Escriba la identigicacion">
       <small id="libroHelp" class="form-text text-muted">Berifique! bien la identificacion del libro</small>
-    </div>
-    <div class="form-group">
-      <label for="idTitup">Titulo Principal</label>
-      <input type="text" class="form-control" id="idTitup" placeholder="Titulo Principal">
-    </div>
-    <div class="form-group">
-      <label for="idTitus">Titulo Secundario</label>
-      <input type="text" class="form-control" id="idTitus" placeholder="Titulo Secundario">
-    </div>
-    <div class="form-group">
-    <label for="idnump">Catidad de Paginas</label>
-      <input type="text" class="form-control" id="idnump" placeholder="Cat. paginas">
-    </div>
-    <div class="form-group">
-    <label for="idpre">Precio</label>
-      <input type="text" class="form-control" id="idpre" placeholder="Precio">
     </div>
     <button type="submit" class="btn btn-primary">Guardar</button>
   </form>

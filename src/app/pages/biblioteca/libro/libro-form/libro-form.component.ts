@@ -12,6 +12,7 @@ export class LibroFormComponent implements OnInit {
   constructor(protected fb:FormBuilder) { }
 
   ngOnInit() {
+ this.CreateForm();
   }
   CreateForm(){
     this.libroFrom= this.fb.group({
