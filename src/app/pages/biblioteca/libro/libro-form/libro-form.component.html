@@ -1,11 +1,18 @@
-{{libroFrom.Value|json()}}
-<form formGroup="libroFrom">
-    <div class="form-group">
-      <label for="idLibro">ID de Libro</label>
-      <input type="text" class="form-control" formControlName="codigo" name="codigo" placeholder="Escriba la identigicacion">
-      <small id="libroHelp" class="form-text text-muted">Berifique! bien la identificacion del libro</small>
-    </div>
-    <button type="submit" class="btn btn-primary">Guardar</button>
-  </form>
-  
+{{autorForm.value | json()}}
+
+<form formGroup="autorForm">
+    <b> Codigo</b> 
+    <br>
+    <input type="text" fomrControlName="codigo" name="codigo" />
+    <br><br>
+    <b> Nombre</b> 
+    <br>
+    <input type="text" formControlName="nombre" name="nombre" />
+    <br><br>
+    <b> Fecha de Nacimiento:</b> 
+    <br>
+    <input type="date" formControlName="fec_nac" name="fecha" />
+    <br><br>
+    <button type="button" class="btn btn-success" (click)="SaveForm()">Enviar </button> 
+</form>
   

@@ -7,7 +7,7 @@ import { FormGroup, FormBuilder } from '@angular/forms';
   styleUrls: ['./libro-form.component.scss']
 })
 export class LibroFormComponent implements OnInit {
-  public libroFrom: FormGroup;
+  public libroForm: FormGroup;
 
   constructor(protected fb:FormBuilder) { }
 
@@ -15,12 +15,12 @@ export class LibroFormComponent implements OnInit {
  this.CreateForm();
   }
   CreateForm(){
-    this.libroFrom= this.fb.group({
-      codigo :' ',
-      nombre1 :' ',
-      nombre2 :' ',
-      Catidad_de_Paginas :' ',
-      idpre:''
+    this.libroForm= this.fb.group({
+      codigo :" ",
+      nombre1 :" ",
+      nombre2 :" ",
+      Catidad_de_Paginas :" ",
+      idpre:" "
 
     });
   }
