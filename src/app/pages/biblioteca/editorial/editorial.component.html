@@ -1,12 +1,11 @@
-<p>editorial works!</p>
+{{editorialForm.value | json }}
 
-<div class="row">
-    <div class="col-6">
-      <app-editorial-table></app-editorial-table>
-    </div>
-    <div class="col-6">
-      <app-editorial-form></app-editorial-form>
-    </div>
-  
-  </div>
-  
+<form [formGroup]="editorialForm">
+        <br><b> Codigo</b> 
+        <br><input type="text" formControlName="code" name="code" />
+        <br><br><b> Descripción</b> 
+        <br><input type="text" formControlName="description" name="description"/>
+        <br><br><b> Pais</b> 
+        <br><input type="text" formControlName="country" name="country"/>
+        <br><br><button type="button" class="btn btn-success" [disabled]="editorialForm.invalid"  (click)="SaveForm()">Enviar </button> 
+</form>        

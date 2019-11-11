@@ -1,12 +1,9 @@
-<p>areas works!</p>
-{{titulo}}
-<div class="row">
-    <div class="col-6">
-      <app-areas-table></app-areas-table>
-    </div>
-    <div class="col-6">
-      <app-areas-form></app-areas-form>
-    </div>
-  
-  </div>
-  
+{{areaForm.value | json }}
+
+<form [formGroup]="areaForm">
+        <br><b> Codigo</b> 
+        <br><input type="text" formControlName="code" name="code" />
+        <br><br><b> Descripción</b> 
+        <br><input type="text" formControlName="description" name="description"/>
+        <br><br><button type="button" class="btn btn-success" [disabled]="areaForm.invalid"  (click)="SaveForm()">Enviar </button> 
+</form>      

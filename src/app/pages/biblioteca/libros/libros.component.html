@@ -1,7 +1,7 @@
 <h1>{{titulo}}</h1>
 <br>
 <form>
-    <b> Codigo Existencia: {{codigo}}</b> 
+    <b> Codigo Libro: {{codigo}}</b> 
     <br>
     <input type="text" [(ngModel)]="codigo" name="codigo" />
     <br><br>
@@ -9,9 +9,13 @@
     <br>
     <input type="text" [(ngModel)]="nombre" name="nombre" />
     <br><br>
-    <b> Descripción: {{descripcion}}</b> 
+    <b> Fecha de Publicación: {{fecha_publicacion}}</b> 
     <br>
-    <textarea placeholder="Escrbir Descripción" name="descripcion" cols="30" rows="8"></textarea>
+    <input type="date" [(ngModel)]="fecha_publicacion" name="fecha_publicacion" />
+    <br><br>
+    <b> Autor: {{autor}}</b> 
+    <br>
+    <input type="text" [(ngModel)]="autor" name="autor" />
     <br><br>
     <button type="button" class="btn btn-success" (click)="SaveForm()">Enviar </button> 
 </form>
